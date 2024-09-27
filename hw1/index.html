@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">sneakers</div>
+      <nav>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user-cart">
+        <i class="fas fa-shopping-cart" id="cartValue"></i>
+        <img
+          src="img/image-avatar.png"
+          alt="User Profile"
+          class="profile-img"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="product-details">
+        <div class="product-gallery">
+          <img
+            src="img/image-product-1.jpg"
+            alt="Product Image"
+            class="main-image"
+          />
+          <div class="thumbnail-images">
+            <img src="img/image-product-1-thumbnail.jpg" alt="Thumbnail 1" />
+            <img src="img/image-product-2-thumbnail.jpg" alt="Thumbnail 2" />
+            <img src="img/image-product-3-thumbnail.jpg" alt="Thumbnail 3" />
+            <img src="img/image-product-4-thumbnail.jpg" alt="Thumbnail 4" />
+          </div>
+        </div>
+
+        <div class="product-info">
+          <p style="text-transform: uppercase; font-weight: 600">
+            sneaker company
+          </p>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="pricing">
+            <span class="current-price">$125.00</span>
+            <span class="discount">50%</span>
+            <span class="original-price">$250.00</span>
+          </div>
+          <div class="cartts">
+            <div class="quantity">
+              <button class="decrease" id="minus">-</button>
+              <input type="number" value="0" min="0" id="inputBox" />
+              <button class="increase" id="plus">+</button>
+            </div>
+            <button class="add-to-cart" id="add-to-cart">
+              <i class="fas fa-cart-plus"></i> Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
